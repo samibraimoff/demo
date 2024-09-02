@@ -1,6 +1,7 @@
+// @ts-ignore
 import * as XLSX from "xlsx/xlsx.mjs";
 
-const ExportButton = ({ data }) => {
+const ExportButton = ({ data }: any) => {
   const exportToExcel = () => {
     const ws = XLSX.utils.aoa_to_sheet(data);
     const wb = XLSX.utils.book_new();

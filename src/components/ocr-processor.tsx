@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Tesseract from "tesseract.js";
 
-const OCRProcessor = ({ image, onProcessComplete }) => {
+const OCRProcessor = ({ image, onProcessComplete }: any) => {
   const [processing, setProcessing] = useState(false);
 
   const processImage = async () => {

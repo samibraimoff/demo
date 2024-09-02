@@ -5,7 +5,7 @@ const CameraCapture = ({ onCapture }: any) => {
 
   const handleCapture = (event: any) => {
     const file = event.target.files[0];
-    const imageUrl = URL.createObjectURL(file);
+    const imageUrl: any = URL.createObjectURL(file);
     setImage(imageUrl);
     onCapture(imageUrl);
   };
